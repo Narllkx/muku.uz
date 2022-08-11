@@ -1,0 +1,631 @@
+$color: #ffe600
+$hover-color: #d6c100
+$text-color: #131316
+$background: url('../img/other/bg.png')
+$slider-font-family: 'Montserrat'
+$slider-color: #fff
+$menu-color: #fff
+$footer-color: #2f2f2f
+$transition: 300ms
+
+body
+    background-image: $background
+    font-family: 'Open Sans', sans-serif
+
+a:hover
+    text-decoration: none
+    color: inherit
+
+header
+    background-color: $color
+    box-shadow: 0px 3px 5px 0 rgba(26, 27, 27, 0.13)
+
+.header
+    display: flex
+    align-items: center
+    padding-top: 40px
+
+.phone-number
+    color: $text-color
+    font-weight: 700
+    display: inline
+    padding-left: 5px
+
+.logo
+    margin: 0 auto
+
+.header-line
+    max-width: 100%
+    background-color: #c9b500
+    margin-top: 38px
+
+.dropbtn
+    background-color: $color
+    border: none
+    font-size: 14px
+    font-weight: 800
+    padding: 10px 0 25px 0
+    cursor: pointer
+
+.dropdown
+    position: relative
+    display: inline-block
+
+.dropdown-content
+    display: none
+    position: absolute
+    background-color: #ffb201
+    min-width: auto
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+    z-index: 5
+
+.dropdown-content a
+    transition: $transition
+    color: black
+    padding: 12px 16px
+    text-decoration: none
+    display: flex
+
+.dropdown-content a:hover
+    background-color: $color
+
+.dropdown:hover .dropdown-content
+    display: flex
+
+.dropdown:hover .dropbtn
+    background-color: transparent
+
+.space-between
+    display: flex
+    justify-content: space-between
+
+.drop-icon
+    padding-left: 4px
+
+.sign-in,
+.sign-up
+    font-size: 14px
+    line-height: 1.71
+    text-align: left
+    font-weight: 600
+    color: $text-color
+
+.sign-up
+    padding-left: 13px
+
+.sign-in
+    padding-right: 11px
+
+.slider
+    margin-top: 30px
+    position: relative
+
+.slide-bg
+    display: block
+    position: absolute
+    background-color: rgba(0, 0, 0, 0.6)
+    top: 0
+    width: 37%
+    bottom: 0
+    color: $slider-color
+    padding: 36px 0 0 70px
+    text-align: left
+    color: $slider-color
+
+.text-2015
+    font-family: $slider-font-family
+    font-size: 25px
+    font-weight: 600
+    line-height: 0.94
+
+.text-lorem
+    font-family: $slider-font-family
+    font-size: 51.5px
+    font-weight: 800
+    line-height: 0.94
+
+.text-ipsum
+    font-family: $slider-font-family
+    font-size: 47.5px
+    font-weight: 600
+    line-height: 0.94
+
+.text-sed
+    font-family: $slider-font-family
+    font-size: 17px
+    font-weight: 600
+    line-height: 0.94
+
+.slide-btn
+    display: flex
+    font-size: 11px
+    font-weight: 600
+    letter-spacing: 2px
+    justify-content: center
+    color: $text-color
+    padding: 11px
+    background-color: $color
+    text-transform: uppercase
+    max-width: 110px
+    margin-top: 15px
+    transition: $transition
+
+.slide-btn:hover
+    background-color: $hover-color
+    color: $text-color
+
+.menu
+    display: flex
+    width: 100%
+    height: auto
+    background-color: $text-color
+    padding: 11.5px 0 11.5px 19px
+    margin-top: 30px
+
+.menu-select
+    padding: 5px 5px 5px 0px
+    cursor: pointer
+    font-size: 14px
+    letter-spacing: -0.56px
+    text-align: left
+    color: #555
+    margin-right: 8px
+
+.menu-btn
+    cursor: pointer
+    background: none
+    border: none
+    padding: 0 3px 0 2px
+    transition: $transition
+
+.menu-input
+    width: 621px
+    margin: 9px 0
+    padding: 8px 0 8px 26px
+    background-color: $menu-color
+    border: none
+    border-radius: 35px
+    line-height: 1.06
+    color: black
+    min-width: 620px
+
+::placeholder
+    font-size: 14px
+    color: black
+
+.menu-text
+    font-size: 14px
+    letter-spacing: -0.7px
+    text-align: left
+    color: $menu-color
+    padding-right: 12px
+    margin-left: 37px
+
+.block
+    display: flex
+    margin-top: 30px
+    transition: $transition
+    background-color: white
+    position: relative
+    border: 0.2px solid rgba(189, 184, 184, 0.693)
+
+.block:hover
+    box-shadow: 0 0 10px 0 rgba(72, 72, 72, 0.34)
+
+.block-text-big
+    font-size: 16px
+    font-weight: bold
+    margin: 0
+
+.block-text-small
+    font-size: 13px
+    line-height: 1.43
+    text-align: left
+    font-weight: 600
+    color: #2f2f2f
+
+.block-sale-text
+    font-size: 20px
+    font-weight: bold
+    line-height: 1
+    text-align: left
+    color: #f00
+
+.block-btn
+    display: flex
+    padding: 11px
+    background-color: $color
+    font-size: 15вpx
+    font-weight: bold
+    line-height: 1.33
+    text-align: left
+    color: #2f2f2f
+    transition: $transition
+    text-decoration: none
+    border-radius: 5px
+    min-width: 250px
+    justify-content: center
+    text-transform: uppercase
+    margin-top: 20px
+
+.block-btn:hover
+    text-decoration: none
+    background-color: #d6c100
+
+.block-text
+    background-color: white
+    padding: 20px 5px 0px 20px
+    border-color: #dadada
+    border: 1px
+
+.block-sale-img
+    vertical-align: sub
+    padding-right: 5px
+
+.new::after
+    content: url(../img/other/new.png)
+    position: absolute
+    top: 0
+    right: 0
+
+.last
+    display: flex
+    width: 100%
+    height: 50px
+    margin: 30px 0 0
+    background-color: $text-color
+    justify-content: center
+
+.last-text
+    display: flex
+    align-items: center
+
+.last-text a
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 3.54
+    color: #fff
+    padding-left: 10px
+    padding-right: 10px
+    transition: $transition
+
+.last-dot::after
+    display: flex
+    align-items: center
+    content: ''
+    background-color: #fff
+    width: 4px
+    height: 4px
+    border-radius: 50px
+
+.last-text a:hover
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 3.54
+    color: $color
+
+footer
+    display: flex
+    height: 62px
+    background-color: $color
+    font-size: 13px
+    color: $footer-color
+    padding-top: 5px
+
+.footer-text
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0
+    font-weight: 600
+
+.data-site
+    display: flex
+    margin: 0
+    text-align: right
+    margin-top: 7px
+    color: $footer-color
+
+.footer-moku
+    margin: 0
+
+.footer-number
+    text-align: right
+
+.footer-number a
+    margin: 0
+    text-align: right
+    text-decoration: none
+    color: $footer-color
+
+.website-menu
+    width: 100%
+    display: flex
+    justify-content: space-between
+.data-site-logo
+    padding: 3px 4px 7px 5px
+@media screen and ( max-width: 1200px )
+    .dropbtn
+        font-size: 13px
+    .slide-bg
+        padding: 10px
+    .menu-input
+        width: 500px
+        min-width: 500px
+    .menu-text
+        margin: 0
+        padding: 0
+    .block
+        display: block
+        text-align: center
+        padding-bottom: 2px
+    .block-text
+        padding: 0px
+    .block img:not(.block-sale-img)
+        width: 100%
+    .block-text-small
+        text-align: center
+    .block-btn
+        margin: 10px 30px
+
+@media screen and ( max-width: 1024px )
+    .dropbtn
+        font-size: 13px
+    .slide-bg
+        padding: 10px
+    .menu-input
+        width: 500px
+        min-width: 500px
+    .menu-text
+        margin: 0
+        padding: 0
+    .block
+        display: block
+        text-align: center
+        padding-bottom: 2px
+    .block-text
+        padding: 0px
+    .block img:not(.block-sale-img)
+        width: 100%
+    .block-text-small
+        text-align: center
+    .block-btn
+        margin: 10px 30px
+
+@media screen and ( max-width: 991px)
+    .text-2015
+        font-size: 20px
+    .text-lorem
+        font-size: 37px
+    .text-ipsum
+        font-size: 27px
+    .slide-btn
+        font-size: 10px
+        padding: 5px
+        margin-top: 8px
+        max-width: 100px
+    .menu
+        display: block
+        text-align: center
+        padding: 11.5px 28px 11.5px 28px
+    .footer-text
+        display: block
+        text-align: center
+    footer
+        height: 100%
+    .footer-number
+        text-align: center
+    .data-site
+        display: flex
+        justify-content: center
+
+    .dropdown
+        margin: 0
+        padding: 0
+        z-index: -1
+        margin-left: 20px
+
+    body.lock
+        overflow: hidden
+    .header-body
+        height: 50px
+    .header-burger
+        display: block
+        width: 30px
+        height: 20px
+        position: relative
+        z-index: 3
+        -webkit-transition: 500ms
+        transition: 500ms
+        margin-left: auto
+        margin-bottom: 15px
+
+    .header-burger:before,
+    .header-burger:after
+        content: ''
+        background-color: #000
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+        transition: 500ms
+    .header-burger:before
+        top: 0
+
+    .header-burger:after
+        bottom: 0
+
+    .header-burger span
+        position: absolute
+        background-color: #000
+        left: 0
+        width: 100%
+        height: 2px
+        top: 9px
+        transition: 500ms
+
+    .header-menu
+        position: fixed
+        top: -100%
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #18b5a4
+        padding: 70px 10px 20px 10px
+        transition: 500ms
+        overflow: auto
+
+    .header-menu.active
+        top: 0
+
+    .header-list
+        display: block
+
+    .header-list li
+        margin: 0 0 20px 0
+
+    .header-link
+        font-size: 30px
+    .header-burger.active:before
+        transform: rotate(45deg)
+        top: 9px
+
+    .header-burger.active:after
+        transform: rotate(-45deg)
+        bottom: 9px
+
+    .header-burger.active span
+        transform: scale(0)
+
+    .content
+        padding: 70px 0 0 0
+
+    .website-menu
+        position: fixed
+        left: 0
+        top: 0
+        bottom: 0
+        background: #ffe600
+        width: 300px
+        display: flex
+        flex-direction: column
+        overflow: auto
+        z-index: 100000000
+        transform: translateX(-100%)
+        transition: 300ms
+        &.active
+            transform: translateX(0)
+    .dropdown-content
+        z-index: 1
+        display: block
+        position: static
+        box-shadow: 0 0 0 0
+        background-color: $color
+    .dropbtn
+        padding: 10px 0 0 0
+    .block-text-small br
+        display: none
+
+@media screen and ( max-width:767px)
+    .dropbtn
+        color: #000
+
+    .menu-select
+        border-radius: 0
+    .header
+        display: block
+        text-align: center
+        padding: 20px
+    .logo
+        display: block
+        padding: 10px
+
+    .header-line
+        margin: 0 0 10px 0
+    .menu-input
+        width: 100%
+        min-width: 100%
+
+    .text-lorem
+        font-size: 35px
+        line-height: 0
+    .text-2015
+        font-size: 25px
+    .text-ipsum
+        font-size: 30px
+        line-height: 0
+    .text-sed
+        font-size: 25px
+        line-height: 0
+    .slide-bg
+        width: 100%
+        line-height: 1.5
+        text-align: center
+
+    .slide-btn
+        font-size: 15px
+        padding: 10px
+        max-width: 150px
+        margin: 25px auto
+    .menu
+        margin-top: 15px
+        padding: 5px
+    .website-menu.active
+        width: 220px
+    .last-text a
+        font-size: 12px
+    .block-text
+        margin: 15px
+    .block-btn
+        min-width: 0
+        margin: 10px 0px
+    .carousel-item img
+        height: 160px
+        object-fit: cover
+
+@media screen and ( max-width:470px)
+    .text-lorem
+        font-size: 30px
+        line-height: 0
+    .text-2015
+        font-size: 20px
+    .text-ipsum
+        font-size: 25px
+        line-height: 0
+    .text-sed
+        font-size: 20px
+        line-height: 0
+    .slide-bg
+        width: 100%
+        line-height: 1.3
+        text-align: center
+    .slide-btn
+        font-size: 15px
+        padding: 10px
+        max-width: 150px
+        margin: 25px auto
+    .carousel-item img
+        height: 160px
+        object-fit: cover
+
+@media screen and ( max-width:375px)
+    .text-lorem
+        font-size: 30px
+        line-height: 0
+    .text-2015
+        font-size: 20px
+    .text-ipsum
+        font-size: 25px
+        line-height: 0
+    .text-sed
+        font-size: 20px
+        line-height: 0
+    .slide-btn
+        font-size: 15px
+        padding: 10px
+        max-width: 150px
+        margin: 25px auto
+
+    .carousel-item img
+        height: 160px
+        object-fit: cover
